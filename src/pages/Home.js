@@ -6,6 +6,9 @@ import Videos from '../video/SlackAnimation.mp4'
 import Fiverr from '../video/FiverrCoverWideM@1x.mp4'
 import Snap from '../video/SnapchatAnimationSquare@1x.mp4'
 import Joe from '../video/JoeAnimationVertical@1x.mp4'
+import Wealth from '../video/WealthAnimationVertical@1x.mp4'
+import Jokr from '../video/JokrAnimationVertical@1x.mp4'
+import Marqeta from '../video/MarqetaAnimationWideM@1x.mp4'
 
 const Home = () => {
 
@@ -283,6 +286,76 @@ const Home = () => {
                             <li className='mx-3 text-[#6a7c9a] text-lg'>UI/UX</li>
                             <li className='mx-3 text-[#6a7c9a] text-lg'>Web App</li>
                             <li className='mx-3 text-[#6a7c9a] text-lg'>Web3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div className='grid grid-cols-2 gap-10 px-48 my-20'>
+                <div className=''>
+                    <video
+                        ref={videoRef}
+                        src={Wealth}
+                        autoPlay
+                        muted
+                        controls={false}
+                        onClick={handleVideo}
+                        onMouseEnter={handleVideoMouseEnter}
+                        onMouseLeave={handleVideoMouseLeave}
+                    ></video>
+                    <h1 className='text-3xl mt-4 font-semibold'>Wealth</h1>
+                    <p className='text-lg'>Designing a self-service digital estate planning platform</p>
+                    <div className='my-2'>
+                        <ul className={`flex ${isUlVisible ? 'block' : 'hidden'}`}>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Branding</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>UI/UX</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Website</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Design System</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='mt-40' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <video
+                        ref={videoRef}
+                        src={Jokr}
+                        autoPlay
+                        muted
+                        controls={false}
+                        onMouseEnter={handleFiverrMouseEnter}
+                        onMouseLeave={handleFiverrMouseLeave}
+                    ></video>
+                    <h1 className='text-3xl mt-4 font-semibold'>JOKR</h1>
+                    <p className='text-lg'>Mobile app design for a fast grocery delivery startup</p>
+                    <div className='my-2'>
+                        <ul className={`flex ${isVisible ? 'block' : 'hidden'}`}>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>UI/UX</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Startup</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Consumer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className='px-48 py-10 ' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div className=''>
+                <video
+                    ref={videoRef}
+                        src={Marqeta}
+                        autoPlay
+                        muted
+                        controls={false}
+                        onMouseEnter={handleFiverrMouseEnter}
+                        onMouseLeave={handleFiverrMouseLeave}
+                ></video>
+                    <h1 className='text-3xl mt-4 font-semibold'>Marqeta</h1>
+                    <p className='text-lg'>Website and digital branding for a modern card-issuing platform</p>
+                    <div className='my-2'>
+                        <ul className={`flex ${isVisible ? 'block' : 'hidden'}`}>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Web Design</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>3D</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Development</li>
+                            <li className='mx-3 text-[#6a7c9a] text-lg'>Fintech</li>
                         </ul>
                     </div>
                 </div>
